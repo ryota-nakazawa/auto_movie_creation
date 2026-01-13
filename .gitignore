@@ -1,0 +1,27 @@
+node_modules
+dist
+.DS_Store
+.env
+
+# Ignore the output video from Git
+out
+
+# ユーザーが用意するファイル（テンプレートには含めない）
+public/slides/
+public/characters/
+public/audio/
+public/demos/
+public/screenshots/
+
+# サンプル動画（ユーザーオリジナル）
+examples/
+
+# スライド提案書（作業用）
+slide-proposals/
+
+# IDE
+.idea
+.vscode
+
+# ログ
+*.log
