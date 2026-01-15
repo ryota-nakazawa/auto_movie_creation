@@ -19,8 +19,8 @@ Remotionを使って、キャラクター同士が対談する形式の解説動
 ### 1. リポジトリをクローン
 
 ```bash
-git clone <your-repo-url>
-cd youtube
+git clone https://github.com/ryota-nakazawa/auto_movie_creation.git
+cd auto_movie_creation
 ```
 
 ### 2. 依存関係をインストール
