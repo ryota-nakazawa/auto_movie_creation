@@ -105,18 +105,20 @@ npx remotion render ExplanationVideo output.mp4
 │   ├── characters.ts    # キャラクター設定
 │   └── settings.ts      # 動画設定
 ├── public/
+│   ├── audio/           # 生成された音声ファイル
 │   ├── characters/      # キャラクター画像
-│   ├── slides/          # スライド画像
-│   └── audio/           # 生成された音声（.gitignore）
+│   └── slides/          # 本番用スライド画像
+├── slide-proposals/     # スライド案・下書き（作業用）
 ├── src/
 │   └── data/
 │       └── sample-script.ts  # 台本
-├── scripts/
-│   ├── generate-audio.ts     # 音声生成
-│   └── sync-audio-duration.ts # 音声同期
-└── examples/
-    └── vibe-coding/     # サンプル動画
+└── scripts/
+    ├── generate-audio.ts     # 音声生成
+    └── sync-audio-duration.ts # 音声同期
 ```
+
+> **Note**: `public/`配下と`slide-proposals/`には`.gitkeep`が配置されています。
+> ファイルの中身は`.gitignore`で除外されますが、ディレクトリ構造はクローン時に維持されます。
 
 ## 🎤 VOICEVOX話者ID一覧
 
