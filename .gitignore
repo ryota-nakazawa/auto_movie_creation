@@ -7,9 +7,13 @@ dist
 out
 
 # ユーザーが用意するファイル（テンプレートには含めない）
-public/slides/
-public/characters/
-public/audio/
+# .gitkeepは除外しない
+public/slides/*
+!public/slides/.gitkeep
+public/characters/*
+!public/characters/.gitkeep
+public/audio/*
+!public/audio/.gitkeep
 public/demos/
 public/screenshots/
 
@@ -17,7 +21,8 @@ public/screenshots/
 examples/
 
 # スライド提案書（作業用）
-slide-proposals/
+slide-proposals/*
+!slide-proposals/.gitkeep
 
 # IDE
 .idea
