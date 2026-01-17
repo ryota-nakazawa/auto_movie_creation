@@ -11,7 +11,7 @@ import { execSync } from 'child_process';
 
 // 音声ディレクトリ
 const AUDIO_DIR = path.join(__dirname, '../public/audio');
-const SCRIPT_PATH = path.join(__dirname, '../src/data/sample-script.ts');
+const SCRIPT_PATH = path.join(__dirname, '../src/data/chatgpt-daily-life-script.ts');
 
 /**
  * WAVファイルの長さを取得（秒）

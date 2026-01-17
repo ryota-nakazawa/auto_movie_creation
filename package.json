@@ -9,6 +9,7 @@
     "@remotion/cli": "4.0.403",
     "@remotion/tailwind-v4": "4.0.403",
     "@remotion/zod-types": "4.0.403",
+    "puppeteer": "^24.35.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-markdown": "^10.1.0",
@@ -31,6 +32,7 @@
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
+    "capture-slides": "node scripts/capture-slides.js",
     "generate-audio": "npx ts-node scripts/generate-audio.ts",
     "sync-audio": "npx ts-node scripts/sync-audio-duration.ts"
   },

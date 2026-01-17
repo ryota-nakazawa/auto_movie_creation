@@ -55,7 +55,23 @@ export const characters = {
 
 `public/slides/` にスライド画像を配置します。
 
-または、Markdown形式でスライドを記述することもできます。
+#### 方法1: 直接画像を配置
+画像ファイル（PNG/JPG）を直接 `public/slides/` に配置します。
+
+#### 方法2: HTMLスライドからキャプチャ
+HTMLでリッチなスライドを作成し、Puppeteerで画像として出力できます。
+
+1. `public/slides.html` にHTMLスライドを作成
+2. 以下のコマンドで画像をキャプチャ:
+
+```bash
+npm run capture-slides
+```
+
+出力先: `public/slides/slide.001.png` 〜
+
+#### 方法3: Markdown形式
+スクリプト内でMarkdown形式でスライドを記述することもできます。
 
 ### Step 3: 台本を作成
 
@@ -113,7 +129,8 @@ npx remotion render ExplanationVideo output.mp4
 │   └── data/
 │       └── sample-script.ts  # 台本
 └── scripts/
-    ├── generate-audio.ts     # 音声生成
+    ├── capture-slides.js      # HTMLスライドを画像化
+    ├── generate-audio.ts      # 音声生成
     └── sync-audio-duration.ts # 音声同期
 ```
 
