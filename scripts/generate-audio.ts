@@ -53,7 +53,7 @@ async function generateVoice(text: string, speakerId: number): Promise<Buffer> {
  */
 async function generateAllAudio() {
   // スクリプトを読み込む
-  const scriptPath = path.join(__dirname, '../src/data/chatgpt-daily-life-script.ts');
+  const scriptPath = path.join(__dirname, '../src/data/sample-script.ts');
   const scriptContent = fs.readFileSync(scriptPath, 'utf-8');
 
   // 出力ディレクトリ（configから取得）

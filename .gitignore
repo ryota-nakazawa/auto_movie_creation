@@ -30,3 +30,11 @@ slide-proposals/*
 
 # ログ
 *.log
+
+# ユーザー固有のコンテンツ（テンプレートには含めない）
+# スライド関連
+public/slides.html
+slides.md
+
+# ユーザーが作成するスクリプト（sample-script.ts以外）
+src/data/chatgpt-daily-life-script.ts

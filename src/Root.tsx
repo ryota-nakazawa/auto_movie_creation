@@ -10,9 +10,6 @@ import {
   sampleScript,
   calculateTotalFrames,
 } from "./data/sample-script";
-import {
-  chatgptDailyLifeScript,
-} from "./data/chatgpt-daily-life-script";
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -21,22 +18,7 @@ const FPS = 30;
 export const RemotionRoot: React.FC = () => {
   return (
     <>
-      {/* ChatGPT日常生活活用法10選 */}
-      <Composition
-        id="ChatGPTDailyLife"
-        component={ExplanationVideo}
-        durationInFrames={calculateTotalFrames(chatgptDailyLifeScript, FPS)}
-        fps={FPS}
-        width={1920}
-        height={1080}
-        schema={explanationVideoSchema}
-        defaultProps={{
-          script: chatgptDailyLifeScript,
-          avatarPath: "demo/avator.mp4",
-        }}
-      />
-
-      {/* 解説動画テンプレート（サンプル） */}
+      {/* 解説動画テンプレート */}
       <Composition
         id="ExplanationVideo"
         component={ExplanationVideo}
